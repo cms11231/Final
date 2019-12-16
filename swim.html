@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <link rel="stylesheet" href="swim.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <h1 class="title">Swimming Set Generator</h1>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Swim Set Generator</h1>
-    <div id="setDisplay">
+    <div id="left"></div>
+    <div id="right"></div>
+    <div id="top"></div>
+    <div id="bottom"></div>
 
-    </div>
-    <button onclick="newSet()">New Set</button>
+    <div id="nleft"></div>
+    <div id="nright"></div>
+    <div id="ntop"></div>
+    <div id="nbottom"></div>
+
+    <button onclick="newSet()" class="button"><span>New Set</span></button>
     <p id="set"></p>
     <script src="swim.js"></script>
 </body>

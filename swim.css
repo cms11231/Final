@@ -1,0 +1,86 @@
+body {
+    text-align: center;
+    background-color: #ADD9FB;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#top, #bottom, #left, #right {
+	background: black;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 15px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 15px;
+		}
+		#top { top: 0; }
+        #bottom { bottom: 0; 
+}
+
+#ntop, #nbottom, #nleft, #nright {
+	background: #ADD9FB;
+	position: fixed;
+	}
+	#nleft, #nright {
+		top: 0; bottom: 0;
+		width: 10px;
+		}
+		#nleft { left: 0; }
+		#nright { right: 0; }
+		
+	#ntop, #nbottom {
+		left: 0; right: 0;
+		height: 10px;
+		}
+		#ntop { top: 0; }
+        #nbottom { bottom: 0; 
+}
+
+.button {
+    background-color: rgb(199, 230, 254);
+    border: 5px solid black;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 10px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.button:hover span {
+    padding-right: 25px;
+}
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
