@@ -9,6 +9,13 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+.text {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
 #top, #bottom, #left, #right {
 	background: black;
 	position: fixed;

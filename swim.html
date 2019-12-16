@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <br>
+    <br>
     <h1 class="title">Swimming Set Generator</h1>
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 </head>
@@ -19,7 +21,25 @@
     <div id="ntop"></div>
     <div id="nbottom"></div>
 
-    <button onclick="newSet()" class="button"><span>New Set</span></button>
+    <br>
+    <br>
+
+    <h6 class="text">What is your goal for this practice?</h6>
+
+    <select class="button">
+        <option value="distance">Distance</option>
+        <option value="sprint">Sprint</option>
+        <option value="recovery">Injury Recovery</option>
+        <option value="stroke">Stroke</option>
+        <option value="easy">Easy Workout</option>
+        <option value="hard">Hard Workout</option>
+    </select>
+
+    <br>
+    <br>
+    <br>
+
+    <button onclick="newSet()" class="button"><span>Create Set</span></button>
     <p id="set"></p>
     <script src="swim.js"></script>
 </body>
