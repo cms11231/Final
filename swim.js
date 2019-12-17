@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded", ready);
+
+
 function newSet() {
     let elem = document.createElement('p');
     var type = document.getElementById("type").value;
@@ -69,4 +72,44 @@ function newSet() {
     
 
     set.append(elem);
+}
+
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
+
+function newtime() {
+    let time = document.getElementById('time');
+    time.classList.remove('hide');
+}
+
+function accepttime() {
+    let time = document.getElementById('time');
+    let input = document.getElementById('input').innerHTML;
+    let insert_text = document.getElementById('insert_text').value;
+    document.getElementById('input').innerHTML = input + "> " + insert_text + "<br>"
+    time.classList.add('hide');
+}
+
+function ready(){
+    let i = 0
+    setInterval(function(){
+        let color = ["#4A81AB", "#5674CA", "#56CAC1"]
+        document.getElementById('title').style.color = color[i]
+            if(i==2){
+                i=0
+            } else {
+                i++
+            }
+    }, 500);
 }

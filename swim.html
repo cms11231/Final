@@ -7,9 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <br>
-    <br>
-    <h1 class="title">Swimming Set Generator</h1>
+    <title>Swimming Set Generator</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 
@@ -24,23 +22,47 @@
     <div id="ntop"></div>
     <div id="nbottom"></div>
 
+    <h1 class="title" id="title">Swimming Set Generator</h1>
+
     <br><br>
+
+    <div id="navbar">
+        <a class="active" href="#setgen">Set Generator</a>
+        <a href="#progress">Progress</a>
+    </div>
 
     <h6 class="text">What is your goal for this practice?</h6>
 
-    <select class="button" id="type">
-        <option disabled selected value="0"> -- Workout Type -- </option>
-        <option value="distance">Distance</option>
-        <option value="sprint">Sprint</option>
-        <option value="stroke">Stroke</option>
-        <option value="easy">Easy Workout</option>
-        <option value="hard">Hard Workout</option>
-    </select>
+    <div id="setgen">
+        <select class="button" id="type">
+            <option disabled selected value="0"> -- Workout Type -- </option>
+            <option value="distance">Distance</option>
+            <option value="sprint">Sprint</option>
+            <option value="stroke">Stroke</option>
+            <option value="easy">Easy Workout</option>
+            <option value="hard">Hard Workout</option>
+        </select>
 
-    <br><br><br>
+        <br><br><br>
 
-    <button onclick="newSet()" class="button"><span>Create Set</span></button>
-    <p id="set" class="text"></p>
-    <script src="swim.js"></script>
+        <button onclick="newSet()" class="button"><span>Create Set</span></button>
+        <p id="set" class="text"></p>
+        <script src="swim.js"></script>
+    </div>
+
+    <div id="progress">
+        ><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p class="text">---------------------------------------------------</p>
+        <h1 class="title">Progress</h1>
+        <p>
+            <p id="input" class="text"></p>
+            <p class="text">How to: To add a time, enter it in the text box below. Click on the "+" to add it.</p>
+            <div id="time" class="hide">
+                <input type="text" id="insert_text" class="button">
+                <button type="button" onclick="accepttime();" class="button">+</button>
+            </div>
+        </p>
+        <br><br><br><br>
+    </div>
 </body>
 </html>

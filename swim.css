@@ -90,3 +90,46 @@ body {
     opacity: 1;
     right: 0;
 }
+
+#navbar {
+    overflow: hidden;
+    background-color: black;
+}
+  
+#navbar a {
+    float: left;
+    display: block;
+    color: #ADD9FB;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+#navbar a:hover {
+    background-color: #ADD9FB;
+    color: black;
+}
+  
+#navbar a.active {
+    background-color: black;
+    color: #ADD9FB;
+}
+  
+.content {
+    padding: 16px;
+}
+  
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.sticky + .content {
+    padding-top: 60px;
+}
+
+.time {
+    display: none;
+}
