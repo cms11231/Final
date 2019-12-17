@@ -15,7 +15,6 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-
 #top, #bottom, #left, #right {
 	background: black;
 	position: fixed;
