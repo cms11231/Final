@@ -37,14 +37,8 @@ function newSet() {
     var hamain = harmain[Math.floor(Math.random()*harmain.length)];
 
 
-
     let cooldown = ["<br>100 easy free<hr>", "<br>500 easy pull<hr>", "<br>400 easy free<hr>", "<br>100 easy kick <br> 100 easy pull <br> 100 easy free<hr>"];
     var cooldownie = cooldown[Math.floor(Math.random()*cooldown.length)];
-
-
-
-
-
 
     
     if (type == 0) {
@@ -72,5 +66,8 @@ function newSet() {
         elem.innerHTML= "Warm up" + hawarm + "<br>" + "Main Set" + hamain +  "<br>" + "Cooldown" + cooldownie;
     }
     
+    
+
+
     set.append(elem);
 }
