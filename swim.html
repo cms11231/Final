@@ -10,7 +10,7 @@
     <title>Swimming Set Generator</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 </head>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <body>
     <div id="left"></div>
     <div id="right"></div>
@@ -26,14 +26,19 @@
 
     <br><br>
 
-    <div id="navbar">
+    <!-- <div id="navbar">
         <a class="active" href="#setgen">Set Generator</a>
         <a href="#progress">Progress</a>
+    </div> -->
+
+    <div class="tabbar">
+         <button class="tabbutton" onclick="openProgress(event, 'setgen')">Set Generator</button>
+         <button class="tabbutton" onclick="openProgress(event, 'progress')">Progress</button>
     </div>
+   
 
-    <h6 class="text">What is your goal for this practice?</h6>
-
-    <div id="setgen">
+    <div id="setgen" class="tabcontent">
+        <h6 class="text">What is your goal for this practice?</h6>
         <select class="button" id="type">
             <option disabled selected value="0"> -- Workout Type -- </option>
             <option value="distance">Distance</option>
@@ -50,13 +55,11 @@
         <script src="swim.js"></script>
     </div>
 
-    <div id="progress">
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <p class="text">---------------------------------------------------</p>
+    <div id="progress" class="tabcontent">
         <h1 class="title">Progress</h1>
         <p>
             <p id="input" class="text"></p>
-            <p class="text">How to: To add a time, enter it in the text box below. Click on the "+" to add it.</p>
+            <p class="prtext">How to: To add a time, enter it in the text box below. Click on the "+" to add it.<br>ex. 100 yard free ~ 1.07<br>100 yard free ~ 1.04<br>100 yard free ~ 1.00</p>
             <div id="time" class="hide">
                 <input type="text" id="insert_text" class="button">
                 <button type="button" onclick="accepttime();" class="button">+</button>
